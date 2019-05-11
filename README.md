@@ -12,4 +12,3 @@ Usage: ./ddns.sh -c [configfile]
 config file(See ddns_config_template):
 * hostname
 * key
-* old_ipv6
