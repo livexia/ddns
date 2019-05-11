@@ -5,7 +5,7 @@ then
     HE_HOSTNAME=$(sed -n '1p' $2)
     HE_KEY=$(sed -n '2p' $2)
     OLD_IP=$(sed -n '3p' $2)
-    IP=$(ifconfig | grep inet6 | grep -v fe | grep -v ::1 | awk '{print $12}')
+    IP=$(ifconfig | grep inet6 | grep -v fe | grep -v ::1 | awk '{print $2}')
     if [ "$IP" = "$OLD_IP" ]
     then
         echo "IP is same as before, do nothing"
