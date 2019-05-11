@@ -10,7 +10,7 @@ def get_local_ipv6():
 
 def updater_he(hostname, key, ip):
     he_url = 'https://{0}:{1}@dyn.dns.he.net/nic/update?hostname={0}&myip={2}'.format(hostname, key , ip)
-    res = requests.get(he_url, timeout = 1)
+    res = requests.get(he_url, timeout = 10)
     if(not res.ok):
         print("Update faliure: {}".format(res.text))
         return updater_he(hostname, key, ip)
