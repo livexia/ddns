@@ -9,7 +9,7 @@ nedd python:requests
 
 Usage: ./ddns.sh -c [configfile]
 
-config file: 
-    hostname
-    key
-    old_ipv6
+config file(See ddns_config_template):
+* hostname
+* key
+* old_ipv6
