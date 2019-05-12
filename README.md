@@ -1,11 +1,11 @@
 # ddns
 ddns shell/python script 
 
-For now noly support he.net and ipv6
+For now only support he.net and ipv6
 
 chomd +x ddns.sh
 
-nedd python:requests
+need python:requests
 
 Usage: ./ddns.sh -c [configfile]
 
